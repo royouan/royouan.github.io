@@ -7,6 +7,17 @@
   --accent: #333333;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #111111;
+    --paper: #111111;
+    --ink: #eeeeee;
+    --muted: #bbbbbb;
+    --line: #333333;
+    --accent: #f2f2f2;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -144,7 +155,7 @@ h1 {
 .plain-list {
   margin: 0;
   padding-left: 20px;
-  color: #343c43;
+  color: var(--ink);
 }
 
 .plain-list li + li {
