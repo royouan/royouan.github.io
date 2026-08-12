@@ -1,1 +1,3 @@
-# youna0720.github.io
+# royouan.github.io
+
+Personal academic website for Youna Park.

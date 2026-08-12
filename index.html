@@ -2,279 +2,87 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Baymax in Reality: A Humanoid System for Non-Contact Health Monitoring and Empathetic Interaction</title>
-
-  <!-- 반응형 설정 -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <!-- 간단한 스타일 (필요에 따라 수정/삭제 가능) -->
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 24px 16px 80px;
-      line-height: 1.6;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 32px;
-    }
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 4px;
-    }
-    .subtitle {
-      font-size: 1rem;
-      color: #666;
-      margin-bottom: 12px;
-    }
-    .authors {
-      font-size: 0.95rem;
-      margin-bottom: 4px;
-    }
-    .affiliations {
-      font-size: 0.9rem;
-      color: #666;
-      margin-bottom: 16px;
-    }
-    .tagline {
-      font-size: 0.9rem;
-      font-style: italic;
-      color: #888;
-    }
-    .btn-row {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 8px;
-      margin-top: 16px;
-      margin-bottom: 24px;
-    }
-    .btn {
-      padding: 8px 14px;
-      border-radius: 999px;
-      border: 1px solid #ddd;
-      text-decoration: none;
-      font-size: 0.9rem;
-      background: #f8f8f8;
-    }
-    .btn.primary {
-      background: #222;
-      color: #fff;
-      border-color: #222;
-    }
-    .hero {
-      text-align: center;
-      margin-bottom: 32px;
-    }
-    .hero img {
-      max-width: 100%;
-      border-radius: 8px;
-      border: 1px solid #eee;
-    }
-    section {
-      margin-bottom: 32px;
-    }
-    section h2 {
-      font-size: 1.4rem;
-      border-bottom: 1px solid #eee;
-      padding-bottom: 4px;
-      margin-bottom: 12px;
-    }
-    .small {
-      font-size: 0.85rem;
-      color: #666;
-    }
-    code {
-      background: #f2f2f2;
-      padding: 2px 4px;
-      border-radius: 3px;
-      font-size: 0.85rem;
-    }
-    footer {
-      margin-top: 40px;
-      font-size: 0.8rem;
-      color: #999;
-      text-align: center;
-    }
-    nav {
-      font-size: 0.9rem;
-      margin-bottom: 16px;
-      text-align: center;
-    }
-    nav a {
-      margin: 0 6px;
-      text-decoration: none;
-      color: #555;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <title>Youna Park</title>
+  <meta name="description" content="Personal academic website of Youna Park." />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <!-- 헤더 / 제목 / 저자 -->
-  <header>
-    <h1>Baymax in Reality: A Humanoid System for Non-Contact Health Monitoring and Empathetic Interaction</h1>
-
-    <div class="subtitle">Autonomous Driving · Human State · Decision-Making Dataset</div>
-
-    <div class="authors">
-      <!-- TODO: 저자 실제 이름으로 바꾸기 -->
-      Junhyeong Park, Taemoon Jeong, Minseo Kwak, Jisoo Kim, Seungbeen Lee, Sungjoon Choi, Youngjae Yu
-    </div>
-    <div class="affiliations">
-      <!-- TODO: 소속 바꾸기 -->
-      Seoul National University, &amp; Collaborating Institutions
-    </div>
-
-    <div class="tagline">
-      We provide a large-scale dataset and benchmark for autonomous decision-making that explicitly models driver states and human evaluations.
-    </div>
-
-    <!-- 상단 버튼들: 논문/코드/데이터/포스터/슬라이드 등 -->
-    <div class="btn-row">
-      <!-- TODO: 링크 실제로 채우기 -->
-      <a class="btn primary" href="https://arxiv.org/abs/2506.13342" target="_blank">Paper (arXiv)</a>
-      <a class="btn" href="https://github.com/yourname/d2e-dataset" target="_blank">Code</a>
-      <a class="btn" href="https://your-dataset-link" target="_blank">Dataset</a>
-      <a class="btn" href="https://your-poster-link" target="_blank">Poster</a>
-      <a class="btn" href="#bibtex">BibTeX</a>
-    </div>
+  <header class="site-header">
+    <a class="site-title" href="#top">Youna Park</a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <!-- 단순 네비게이션 -->
-  <nav>
-    <a href="#abstract">Abstract</a> ·
-    <a href="#overview">Overview</a> ·
-    <a href="#method">Method</a> ·
-    <a href="#results">Results</a> ·
-    <a href="#limitations">Limitations</a> ·
-    <a href="#bibtex">BibTeX</a>
-  </nav>
+  <main id="top" class="page">
+    <section class="intro">
+      <div class="portrait-wrap">
+        <img class="portrait" src="assets/profile.png" alt="Portrait of Youna Park" />
+      </div>
 
-  <!-- 메인 이미지 / GIF / Figure -->
-  <div class="hero">
-    <!-- TODO: 썸네일 이미지 or GIF 경로로 교체 -->
-    <img src="./d2e_thumbnail.gif" alt="D2E Dataset Overview (Demo)" />
-    <div class="small">
-      Figure 1: Overview of D2E — an autonomous decision-making dataset involving driver states and human evaluations.
-    </div>
-  </div>
+      <div class="intro-text">
+        <p class="eyebrow">Personal website</p>
+        <h1>Youna Park</h1>
+        <p class="role">Researcher</p>
+        <p class="bio" id="about">
+          Short research statement coming soon.
+        </p>
+        <div class="link-row" aria-label="Profile links">
+          <a href="https://github.com/royouan">GitHub</a>
+          <a href="https://www.linkedin.com/in/youna-park-9a5079276/">LinkedIn</a>
+          <a href="mailto:youna0720@snu.ac.kr">Email</a>
+        </div>
+      </div>
+    </section>
 
-  <!-- Abstract 섹션 -->
-  <section id="abstract">
-    <h2>Abstract</h2>
-    <p>
-      <!-- TODO: 실제 논문 abstract 요약해서 넣기 -->
-      We introduce <strong>D2E</strong>, a dataset for autonomous decision-making that explicitly incorporates driver states
-      (e.g., attention, cognitive load, and emotional status) and human evaluations of decisions in diverse driving scenarios.
-      By combining sensor data, driver monitoring, and human-labeled decision quality, D2E enables systematic analysis
-      of how internal human states influence safe and reliable autonomous control.
-    </p>
-  </section>
+    <section class="content-section" id="research">
+      <h2>Research Interests</h2>
+      <ul class="plain-list">
+        <li>Multimodal learning and video understanding</li>
+        <li>Human-centered AI systems</li>
+        <li>Decision-making, evaluation, and real-world AI applications</li>
+      </ul>
+    </section>
 
-  <!-- Overview / Motivation -->
-  <section id="overview">
-    <h2>Motivation &amp; Overview</h2>
-    <p>
-      <!-- TODO: 왜 이 연구를 했는지 서술 -->
-      Conventional autonomous driving datasets focus primarily on external environment sensing such as LiDAR or cameras,
-      while largely ignoring the driver’s internal states. However, real-world decision-making in driving
-      is strongly influenced by attention, stress, fatigue, and emotional conditions.
-    </p>
-    <p>
-      D2E closes this gap by capturing:
-    </p>
-    <ul>
-      <li>Multi-modal sensor data from the vehicle and environment,</li>
-      <li>Physiological and behavioral measures of driver states,</li>
-      <li>Human evaluations of driving decisions under various conditions.</li>
-    </ul>
-  </section>
+    <section class="content-section" id="projects">
+      <h2>Selected Projects</h2>
+      <div class="project-list">
+        <article>
+          <h3>Baymax in Reality</h3>
+          <p>
+            A project page draft for a humanoid system focused on non-contact
+            health monitoring and empathetic interaction.
+          </p>
+        </article>
+        <article>
+          <h3>NAA-Diffact</h3>
+          <p>
+            Public Python research code related to video understanding.
+          </p>
+        </article>
+        <article>
+          <h3>More work</h3>
+          <p>
+            Additional publications and project descriptions will be added here.
+          </p>
+        </article>
+      </div>
+    </section>
 
-  <!-- Method / Dataset 구성 -->
-  <section id="method">
-    <h2>Dataset &amp; Tasks</h2>
-    <p>
-      <!-- TODO: 구조/설계 설명 -->
-      The D2E dataset consists of <strong>XXX hours</strong> of driving recordings collected from
-      <strong>YYY drivers</strong> in <strong>ZZZ</strong> different scenarios.
-      Each episode includes synchronized streams of:
-    </p>
-    <ul>
-      <li>Vehicle sensor data (speed, steering, acceleration, etc.),</li>
-      <li>Front- and rear-view cameras,</li>
-      <li>Driver monitoring signals (e.g., gaze, facial expressions, head pose),</li>
-      <li>Human evaluations about the quality and safety of decisions.</li>
-    </ul>
-
-    <p>
-      We define several benchmark tasks, such as:
-    </p>
-    <ul>
-      <li><strong>Decision Quality Prediction</strong> given driver state and scene context,</li>
-      <li><strong>Risk-aware Planning</strong> under different cognitive or emotional states,</li>
-      <li><strong>Driver-aware Policy Learning</strong> integrating internal states with external observations.</li>
-    </ul>
-  </section>
-
-  <!-- Results / Benchmarks -->
-  <section id="results">
-    <h2>Experiments &amp; Results</h2>
-    <p>
-      <!-- TODO: 주요 결과/그래프 요약 -->
-      We benchmark a range of baselines including supervised learning, RL-based policies, and driver-state-conditioned models.
-      Our results show that explicitly modeling driver states significantly improves prediction of human-evaluated decision quality,
-      especially in ambiguous or high-risk scenarios.
-    </p>
-    <p>
-      <!-- 나중에 표/이미지 넣을 자리 -->
-      <!-- Example: <img src="./results_table.png" alt="Benchmark Results" /> -->
-      Please refer to the paper and the GitHub repository for full implementation details and numerical results.
-    </p>
-  </section>
-
-  <!-- Limitation & Future Work -->
-  <section id="limitations">
-    <h2>Limitations &amp; Future Work</h2>
-    <p>
-      <!-- TODO: 논문에 있는 limitation 요약 -->
-      While D2E covers diverse scenarios and driver states, it still has limitations:
-    </p>
-    <ul>
-      <li>The dataset is collected in specific geographic and cultural contexts, which may affect generalization.</li>
-      <li>Our driver state measurements, though multi-modal, are still an approximation of complex internal processes.</li>
-      <li>Evaluations rely on human annotators, which may introduce biases and disagreements.</li>
-    </ul>
-    <p>
-      Future work includes extending D2E to broader regions, integrating richer physiological sensing,
-      and exploring robust learning methods under annotator disagreement.
-    </p>
-  </section>
-
-  <!-- BibTeX -->
-  <section id="bibtex">
-    <h2>BibTeX</h2>
-    <p class="small">
-      <!-- TODO: 실제 BibTeX로 교체 -->
-      If you find D2E useful in your research, please cite:
-    </p>
-<pre><code>@inproceedings{park2025d2e,
-  title     = {D2E: An Autonomous Decision-Making Dataset Involving Driver States and Human Evaluation},
-  author    = {Park, Youna and First, Author and Second, Author and Third, Author},
-  booktitle = {Proceedings of ...},
-  year      = {2025}
-}</code></pre>
-  </section>
-
-  <footer>
-    <!-- TODO: 연락처/메일 수정 -->
-    Contact: <a href="mailto:youna@example.com">youna@example.com</a> ·
-    Last updated: 2025-11-18
-  </footer>
-
+    <section class="content-section contact" id="contact">
+      <h2>Contact</h2>
+      <p>
+        The best places to find current links are GitHub and LinkedIn.
+      </p>
+      <div class="contact-links">
+        <a href="https://github.com/royouan">github.com/royouan</a>
+        <a href="https://www.linkedin.com/in/youna-park-9a5079276/">LinkedIn</a>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
