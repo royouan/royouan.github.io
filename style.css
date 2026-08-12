@@ -9,13 +9,31 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #111111;
-    --paper: #111111;
-    --ink: #eeeeee;
-    --muted: #bbbbbb;
-    --line: #333333;
-    --accent: #f2f2f2;
+    --bg: #181818;
+    --paper: #181818;
+    --ink: #ededed;
+    --muted: #b8b8b8;
+    --line: #3a3a3a;
+    --accent: #f0f0f0;
   }
+}
+
+:root[data-theme="dark"] {
+  --bg: #181818;
+  --paper: #181818;
+  --ink: #ededed;
+  --muted: #b8b8b8;
+  --line: #3a3a3a;
+  --accent: #f0f0f0;
+}
+
+:root[data-theme="light"] {
+  --bg: #ffffff;
+  --paper: #ffffff;
+  --ink: #222222;
+  --muted: #555555;
+  --line: #dddddd;
+  --accent: #333333;
 }
 
 * {
@@ -128,10 +146,23 @@ h1 {
 }
 
 .link-row a + a::before,
-.contact-links a::before {
+.contact-links a::before,
+.theme-toggle::before {
   color: var(--muted);
   content: "/";
   margin-right: 10px;
+}
+
+.theme-toggle {
+  appearance: none;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+  font: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .content-section {

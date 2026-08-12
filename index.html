@@ -11,6 +11,12 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <script>
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+      document.documentElement.dataset.theme = savedTheme;
+    }
+  </script>
   <main id="top" class="page">
     <article class="profile-card">
       <header class="site-header">
@@ -22,6 +28,7 @@
           <a href="mailto:youna0720@snu.ac.kr">Email</a>
           <a href="https://github.com/royouan">GitHub</a>
           <a href="https://www.linkedin.com/in/youna-park-9a5079276/">LinkedIn</a>
+          <button class="theme-toggle" type="button" aria-label="Toggle dark mode">Dark: Off</button>
         </div>
       </header>
 
@@ -172,5 +179,33 @@
       </section>
     </article>
   </main>
+  <script>
+    const themeToggle = document.querySelector(".theme-toggle");
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)");
+
+    function currentTheme() {
+      return document.documentElement.dataset.theme ||
+        (prefersDark.matches ? "dark" : "light");
+    }
+
+    function updateThemeButton() {
+      themeToggle.textContent = currentTheme() === "dark" ? "Dark: On" : "Dark: Off";
+    }
+
+    themeToggle.addEventListener("click", () => {
+      const nextTheme = currentTheme() === "dark" ? "light" : "dark";
+      document.documentElement.dataset.theme = nextTheme;
+      localStorage.setItem("theme", nextTheme);
+      updateThemeButton();
+    });
+
+    prefersDark.addEventListener("change", () => {
+      if (!localStorage.getItem("theme")) {
+        updateThemeButton();
+      }
+    });
+
+    updateThemeButton();
+  </script>
 </body>
 </html>
